@@ -15,6 +15,11 @@ from langchain_core.prompts import PromptTemplate
 
 from langchain_core.runnables import RunnableSequence
 
+from dotenv import load_dotenv
+
+# Carregar as variáveis de ambiente do arquivo .env
+load_dotenv()
+
 OPENAI_API_KEY= os.environ['OPENAI_API_KEY']
 
 llm = ChatOpenAI(model="gpt-3.5-turbo")
